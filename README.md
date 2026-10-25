@@ -11,7 +11,7 @@ The upstream chat, tool views, streaming and sessions remain available at `/chat
 
 ## Quickstart: no API keys required
 
-Requires Node.js 22 or newer (Node 26 locally tested; Node 22 configured in CI), pnpm 9.12.0, and network access
+Requires Node.js 22 or newer (Node 26 locally tested; Node 22 CI passed), pnpm 9.12.0, and network access
 for dependency installation and the build's Google fonts. No model API key is
 needed for the recorded demo.
 

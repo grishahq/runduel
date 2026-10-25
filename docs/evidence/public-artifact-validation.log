@@ -1,0 +1,50 @@
+
+> runduel@0.1.0 validate <repository>/.tmp/public-artifact
+> pnpm test && pnpm lint && pnpm typecheck && pnpm format
+
+
+> runduel@0.1.0 test <repository>/.tmp/public-artifact
+> tsx --test tests/*.test.ts
+
+✔ SSE fragmentation, CRLF, multibyte UTF-8, comments, multiple frames and multiline JSON (21.656958ms)
+✔ SSE envelope used by upstream (0.51825ms)
+✔ SSE rejects invalid JSON (0.285583ms)
+✔ SSE rejects primitive (0.131625ms)
+✔ SSE rejects missing event (0.122792ms)
+✔ SSE rejects conflicting events (0.311667ms)
+✔ SSE rejects truncated frame (0.075292ms)
+✔ SSE rejects oversized frame (1.860667ms)
+✔ completion replaces streamed answer, usage missing stays unknown, tools merge by ID (46.89525ms)
+✔ valid usage is retained, invalid metrics stay unknown (0.125167ms)
+✔ run error, paused, malformed tools, missing terminal and HTTP failures are errors (1.013ms)
+✔ terminal cancellation cannot become success on RunCompleted (0.231625ms)
+✔ user cancellation during a pending read releases stream (10.682833ms)
+✔ timeout is an error, not user cancellation (6.502125ms)
+✔ checks preserve types and zero; inherited paths are not values (0.154ms)
+✔ allowlist exports omit adversarial secrets/free text and HTML executes no payload (0.255708ms)
+✔ live request uses independent sessions and identical task input; endpoint validation (5.581667ms)
+✔ recorded real AgentOS fixed suite detects every injected currency regression (37.188167ms)
+✔ terminal event finishes immediately even when connection stays open (0.333042ms)
+✔ custom task validates exact scalar checks and rejects ambiguous input (19.644375ms)
+ℹ tests 20
+ℹ suites 0
+ℹ pass 20
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 956.147458
+
+> runduel@0.1.0 lint <repository>/.tmp/public-artifact
+> eslint src tests scripts --max-warnings 0
+
+
+> runduel@0.1.0 typecheck <repository>/.tmp/public-artifact
+> tsc --noEmit
+
+
+> runduel@0.1.0 format <repository>/.tmp/public-artifact
+> prettier --check "src/**/*.{ts,tsx,css}" "tests/**/*.ts"
+
+Checking formatting...
+All matched files use Prettier code style!

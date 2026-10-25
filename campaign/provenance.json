@@ -22,6 +22,11 @@
       "file": "campaign/assets/04-fixed-suite-results.png",
       "source": "scripts/plot-evidence.py and docs/evidence/fixed-suite.json",
       "type": "data plot of checked real deterministic Agno runs"
+    },
+    {
+      "file": "campaign/assets/05-release-quickstart.png",
+      "source": "scripts/plot-quickstart.py and verified release quickstart",
+      "type": "typeset instruction card; not a screenshot"
     }
   ]
 }

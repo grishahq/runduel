@@ -1,0 +1,46 @@
+{
+  "repo": "https://github.com/grishahq/runduel",
+  "release_url": "https://github.com/grishahq/runduel/releases/tag/v0.1.0",
+  "public_unauthenticated_api_readback": true,
+  "public_downloads_verified": {
+    "runduel-0.1.0-evidence.zip": "624d39ebc3c983eac7b0b1dcc0b1e825f0096aad7cfb92a2f9cb67db4e559652",
+    "runduel-0.1.0-source.tar.gz": "23e5c3d839349076000fdca86cd11af6e4bd6ecb42383dd90767fff592da863d"
+  },
+  "is_draft": false,
+  "is_prerelease": true,
+  "published_at": "2026-10-25T19:28:36Z",
+  "tag": "v0.1.0",
+  "tag_object_sha": "7ae66f99d5d9e5ca32d14a788b259a1a17a8b8e8",
+  "source_commit": "cc3150c5b729251603d2001cb1bc370d391f8bc7",
+  "local_clean_source_validation": {
+    "frozen_install": "passed",
+    "contract_tests": 20,
+    "lint_types_format": "passed",
+    "production_build": "passed",
+    "source": "Fresh git archive of the exact released commit. Downloaded source artifact SHA matches published checksum; independent public artifact installation recorded below after completion."
+  },
+  "ci": "https://github.com/grishahq/runduel/actions/runs/40225590035",
+  "public_artifact_clean_install": {
+    "state": "passed",
+    "artifact_sha256": "23e5c3d839349076000fdca86cd11af6e4bd6ecb42383dd90767fff592da863d",
+    "frozen_dependency_install": "passed",
+    "contract_tests": 20,
+    "lint_typecheck_format": "passed",
+    "production_build": "passed",
+    "browser_tests": 7,
+    "real_agentos_compatibility": "Agno 2.5.9, Python 3.12; real tools executed without provider API calls",
+    "evidence": "docs/evidence/public-artifact-*.log"
+  },
+  "immutable": true,
+  "release_id": 423612113,
+  "release_immutability_readback": {
+    "enabled": true,
+    "immutable": true,
+    "reference": "https://docs.github.com/en/code-security/how-tos/secure-your-supply-chain/establish-provenance-and-integrity/prevent-release-changes"
+  },
+  "tag_ci": "https://github.com/grishahq/runduel/actions/runs/40225982502",
+  "attestation_verification": {
+    "state": "passed",
+    "evidence": "docs/evidence/release-attestation.json"
+  }
+}

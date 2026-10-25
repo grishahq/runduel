@@ -1,0 +1,64 @@
+{
+  "project": "RunDuel",
+  "language": "en",
+  "timezone": "Asia/Dubai",
+  "prepared": true,
+  "scheduled": false,
+  "published": false,
+  "accounts": {
+    "linkedin": {
+      "url": "https://www.linkedin.com/in/gregogv/",
+      "display_name": "Gregory Gvadzabia",
+      "verified": "Owner profile with Edit profile controls and You labels visible in new RunDuel-owned tab on 2026-10-25"
+    },
+    "x": {
+      "handle": null,
+      "verified": false
+    }
+  },
+  "connected_social_plugin": {
+    "metricool": "Discovered but not installed; no connected social publishing tool available in this chat"
+  },
+  "native_scheduling": {
+    "state": "awaiting_portfolio_lock",
+    "reservation_count": 0,
+    "readback_ids": []
+  },
+  "items": [
+    {
+      "beat": 1,
+      "linkedin": "prepared",
+      "x_thread": "prepared",
+      "scheduled_at": null,
+      "published_urls": []
+    },
+    {
+      "beat": 2,
+      "linkedin": "prepared",
+      "x_thread": "prepared",
+      "scheduled_at": null,
+      "published_urls": []
+    },
+    {
+      "beat": 3,
+      "linkedin": "prepared",
+      "x_thread": "prepared",
+      "scheduled_at": null,
+      "published_urls": []
+    },
+    {
+      "beat": 4,
+      "linkedin": "prepared",
+      "x_thread": "prepared",
+      "scheduled_at": null,
+      "published_urls": []
+    },
+    {
+      "beat": 5,
+      "linkedin": "prepared",
+      "x_thread": "prepared",
+      "scheduled_at": null,
+      "published_urls": []
+    }
+  ]
+}

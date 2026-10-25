@@ -1,0 +1,39 @@
+
+> runduel@0.1.0 build <repository>/.tmp/clean-v010
+> next build
+
+ ⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of <repository>/pnpm-lock.yaml as the root directory.
+ To silence this warning, set `outputFileTracingRoot` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/output#caveats for more information.
+ Detected additional lockfiles:
+   * <repository>/.tmp/clean-v010/pnpm-lock.yaml
+
+   ▲ Next.js 15.5.18
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully in 55s
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/7) ...
+(node:94677) ExperimentalWarning: localStorage is not available because --localstorage-file was not provided.
+(Use `node --trace-warnings ...` to show where the warning was created)
+   Generating static pages (1/7)
+   Generating static pages (3/7)
+   Generating static pages (5/7)
+ ✓ Generating static pages (7/7)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                                 Size  First Load JS
+┌ ○ /                                      121 B         102 kB
+├ ○ /_not-found                             1 kB         103 kB
+├ ○ /chat                                 229 kB         345 kB
+└ ○ /compare                             7.53 kB         113 kB
++ First Load JS shared by all             102 kB
+  ├ chunks/414-38409911b92d18ce.js         46 kB
+  ├ chunks/722cb4ca-a34b447eab3f872c.js  54.2 kB
+  └ other shared chunks (total)          1.93 kB
+
+
+○  (Static)  prerendered as static content

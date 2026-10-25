@@ -1,0 +1,50 @@
+
+> runduel@0.1.0 validate <repository>/.tmp/clean-v010
+> pnpm test && pnpm lint && pnpm typecheck && pnpm format
+
+
+> runduel@0.1.0 test <repository>/.tmp/clean-v010
+> tsx --test tests/*.test.ts
+
+✔ SSE fragmentation, CRLF, multibyte UTF-8, comments, multiple frames and multiline JSON (63.718625ms)
+✔ SSE envelope used by upstream (5.326125ms)
+✔ SSE rejects invalid JSON (2.150792ms)
+✔ SSE rejects primitive (1.040333ms)
+✔ SSE rejects missing event (0.23925ms)
+✔ SSE rejects conflicting events (0.321416ms)
+✔ SSE rejects truncated frame (0.304625ms)
+✔ SSE rejects oversized frame (5.918083ms)
+✔ completion replaces streamed answer, usage missing stays unknown, tools merge by ID (156.353916ms)
+✔ valid usage is retained, invalid metrics stay unknown (2.17225ms)
+✔ run error, paused, malformed tools, missing terminal and HTTP failures are errors (3.156208ms)
+✔ terminal cancellation cannot become success on RunCompleted (1.087417ms)
+✔ user cancellation during a pending read releases stream (22.58725ms)
+✔ timeout is an error, not user cancellation (7.5205ms)
+✔ checks preserve types and zero; inherited paths are not values (0.987ms)
+✔ allowlist exports omit adversarial secrets/free text and HTML executes no payload (0.77925ms)
+✔ live request uses independent sessions and identical task input; endpoint validation (13.895875ms)
+✔ recorded real AgentOS fixed suite detects every injected currency regression (236.313334ms)
+✔ terminal event finishes immediately even when connection stays open (5.252541ms)
+✔ custom task validates exact scalar checks and rejects ambiguous input (159.508166ms)
+ℹ tests 20
+ℹ suites 0
+ℹ pass 20
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2733.387833
+
+> runduel@0.1.0 lint <repository>/.tmp/clean-v010
+> eslint src tests scripts --max-warnings 0
+
+
+> runduel@0.1.0 typecheck <repository>/.tmp/clean-v010
+> tsc --noEmit
+
+
+> runduel@0.1.0 format <repository>/.tmp/clean-v010
+> prettier --check "src/**/*.{ts,tsx,css}" "tests/**/*.ts"
+
+Checking formatting...
+All matched files use Prettier code style!

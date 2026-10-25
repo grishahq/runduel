@@ -25,25 +25,42 @@
     "independent_review": "one reproduced terminal-read defect fixed and rechecked"
   },
   "github_release": {
-    "state": "pending",
-    "url": null
+    "state": "published_verified",
+    "maturity": "experimental prerelease",
+    "url": "https://github.com/grishahq/runduel/releases/tag/v0.1.0",
+    "tag": "v0.1.0",
+    "commit": "cc3150c5b729251603d2001cb1bc370d391f8bc7",
+    "immutable": true,
+    "public_artifact_clean_install": "passed",
+    "signed_attestation": "verified"
   },
   "campaign": {
-    "state": "pending",
-    "prepared": false,
+    "state": "prepared",
+    "prepared": true,
+    "linkedin_posts": 5,
+    "x_threads": 5,
+    "x_posts_per_thread": 4,
+    "images": 5,
+    "original_generated_concepts": 2,
+    "all_character_limits_checked": true,
     "scheduled": false,
-    "published": false
+    "published": false,
+    "evidence": "campaign/CAMPAIGN.md"
   },
   "evidence_paths": [
     "docs/evidence/validation.log",
     "docs/evidence/build.log",
     "docs/evidence/browser-results.json",
     "docs/evidence/fixed-suite.json",
-    "docs/evidence/independent-review.md"
+    "docs/evidence/independent-review.md",
+    "docs/evidence/release-verification.json",
+    "docs/evidence/github-ci.json",
+    "campaign/provenance.json"
   ],
-  "blockers": [],
+  "blockers": [
+    "Native composer/queue work currently awaits the live portfolio social-publish.lock held by another project. No RunDuel slot has been reserved and no post has been scheduled or published."
+  ],
   "next_actions": [
-    "Clean source install, publish and verify v0.1.0",
-    "Complete five-beat campaign and inspect native scheduling under portfolio lock"
+    "Acquire the portfolio lock, inspect native queues and schedule supported campaign items"
   ]
 }
