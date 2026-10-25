@@ -1,0 +1,2 @@
+# A blank line terminates the last SSE frame and is required protocol data.
+*.sse whitespace=-blank-at-eof
