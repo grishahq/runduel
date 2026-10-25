@@ -1,0 +1,39 @@
+event: RunStarted
+data: {"created_at":1792955205,"event":"RunStarted","agent_id":"extractor-regressed","agent_name":"Invoice extractor (regressed)","run_id":"e77b5a29-e1c4-4a8f-9b4c-bd436b40e472","session_id":"runduel-evidence-invoice-gbp-candidate-a4f0ac9e-1386-4ea8-9a92-9742f6eddb8d","model":"runduel-deterministic-v1","model_provider":"offline-fixture"}
+
+event: ModelRequestStarted
+data: {"created_at":1792955205,"event":"ModelRequestStarted","agent_id":"extractor-regressed","agent_name":"Invoice extractor (regressed)","run_id":"e77b5a29-e1c4-4a8f-9b4c-bd436b40e472","session_id":"runduel-evidence-invoice-gbp-candidate-a4f0ac9e-1386-4ea8-9a92-9742f6eddb8d","model":"runduel-deterministic-v1","model_provider":"offline-fixture"}
+
+event: ModelRequestCompleted
+data: {"created_at":1792955205,"event":"ModelRequestCompleted","agent_id":"extractor-regressed","agent_name":"Invoice extractor (regressed)","run_id":"e77b5a29-e1c4-4a8f-9b4c-bd436b40e472","session_id":"runduel-evidence-invoice-gbp-candidate-a4f0ac9e-1386-4ea8-9a92-9742f6eddb8d","model":"runduel-deterministic-v1","model_provider":"offline-fixture","input_tokens":0,"output_tokens":0,"total_tokens":0,"reasoning_tokens":0,"cache_read_tokens":0,"cache_write_tokens":0}
+
+event: ToolCallStarted
+data: {"created_at":1792955205,"event":"ToolCallStarted","agent_id":"extractor-regressed","agent_name":"Invoice extractor (regressed)","run_id":"e77b5a29-e1c4-4a8f-9b4c-bd436b40e472","session_id":"runduel-evidence-invoice-gbp-candidate-a4f0ac9e-1386-4ea8-9a92-9742f6eddb8d","tool":{"tool_call_id":"offline-1","tool_name":"extract_invoice","tool_args":{"document":"Extract invoice_id, total (number), and currency (ISO code) as a JSON object. Document: Invoice INV-306 | Total £0.00 | Currency GBP"},"tool_call_error":null,"result":null,"metrics":null,"child_run_id":null,"stop_after_tool_call":false,"created_at":1792955205,"requires_confirmation":null,"confirmed":null,"confirmation_note":null,"requires_user_input":null,"user_input_schema":null,"user_feedback_schema":null,"answered":null,"external_execution_required":null,"external_execution_silent":null,"approval_type":null,"approval_id":null}}
+
+event: ToolCallCompleted
+data: {"created_at":1792955205,"event":"ToolCallCompleted","agent_id":"extractor-regressed","agent_name":"Invoice extractor (regressed)","run_id":"e77b5a29-e1c4-4a8f-9b4c-bd436b40e472","session_id":"runduel-evidence-invoice-gbp-candidate-a4f0ac9e-1386-4ea8-9a92-9742f6eddb8d","content":"extract_invoice(document=...) completed in 0.0006s. ","tool":{"tool_call_id":"offline-1","tool_name":"extract_invoice","tool_args":{"document":"Extract invoice_id, total (number), and currency (ISO code) as a JSON object. Document: Invoice INV-306 | Total £0.00 | Currency GBP"},"tool_call_error":false,"result":"{\"invoice_id\": \"INV-306\", \"total\": 0.0, \"currency_raw\": \"GBP\"}","metrics":{"start_time":1792955205.8634996,"end_time":1792955205.864057,"duration":0.0005574999959208071},"child_run_id":null,"stop_after_tool_call":false,"created_at":1792955205,"requires_confirmation":null,"confirmed":null,"confirmation_note":null,"requires_user_input":null,"user_input_schema":null,"user_feedback_schema":null,"answered":null,"external_execution_required":null,"external_execution_silent":null,"approval_type":null,"approval_id":null}}
+
+event: ModelRequestStarted
+data: {"created_at":1792955205,"event":"ModelRequestStarted","agent_id":"extractor-regressed","agent_name":"Invoice extractor (regressed)","run_id":"e77b5a29-e1c4-4a8f-9b4c-bd436b40e472","session_id":"runduel-evidence-invoice-gbp-candidate-a4f0ac9e-1386-4ea8-9a92-9742f6eddb8d","model":"runduel-deterministic-v1","model_provider":"offline-fixture"}
+
+event: RunContent
+data: {"created_at":1792955205,"event":"RunContent","agent_id":"extractor-regressed","agent_name":"Invoice extractor (regressed)","run_id":"e77b5a29-e1c4-4a8f-9b4c-bd436b40e472","session_id":"runduel-evidence-invoice-gbp-candidate-a4f0ac9e-1386-4ea8-9a92-9742f6eddb8d","content":"{\"invoice_id","workflow_agent":false,"content_type":"str","reasoning_content":""}
+
+event: RunContent
+data: {"created_at":1792955205,"event":"RunContent","agent_id":"extractor-regressed","agent_name":"Invoice extractor (regressed)","run_id":"e77b5a29-e1c4-4a8f-9b4c-bd436b40e472","session_id":"runduel-evidence-invoice-gbp-candidate-a4f0ac9e-1386-4ea8-9a92-9742f6eddb8d","content":"\": \"INV-306\"","workflow_agent":false,"content_type":"str","reasoning_content":""}
+
+event: RunContent
+data: {"created_at":1792955205,"event":"RunContent","agent_id":"extractor-regressed","agent_name":"Invoice extractor (regressed)","run_id":"e77b5a29-e1c4-4a8f-9b4c-bd436b40e472","session_id":"runduel-evidence-invoice-gbp-candidate-a4f0ac9e-1386-4ea8-9a92-9742f6eddb8d","content":", \"total\": 0","workflow_agent":false,"content_type":"str","reasoning_content":""}
+
+event: RunContent
+data: {"created_at":1792955205,"event":"RunContent","agent_id":"extractor-regressed","agent_name":"Invoice extractor (regressed)","run_id":"e77b5a29-e1c4-4a8f-9b4c-bd436b40e472","session_id":"runduel-evidence-invoice-gbp-candidate-a4f0ac9e-1386-4ea8-9a92-9742f6eddb8d","content":".0}","workflow_agent":false,"content_type":"str","reasoning_content":""}
+
+event: ModelRequestCompleted
+data: {"created_at":1792955205,"event":"ModelRequestCompleted","agent_id":"extractor-regressed","agent_name":"Invoice extractor (regressed)","run_id":"e77b5a29-e1c4-4a8f-9b4c-bd436b40e472","session_id":"runduel-evidence-invoice-gbp-candidate-a4f0ac9e-1386-4ea8-9a92-9742f6eddb8d","model":"runduel-deterministic-v1","model_provider":"offline-fixture","input_tokens":0,"output_tokens":0,"total_tokens":0,"time_to_first_token":0.03151125001022592,"reasoning_tokens":0,"cache_read_tokens":0,"cache_write_tokens":0}
+
+event: RunContentCompleted
+data: {"created_at":1792955205,"event":"RunContentCompleted","agent_id":"extractor-regressed","agent_name":"Invoice extractor (regressed)","run_id":"e77b5a29-e1c4-4a8f-9b4c-bd436b40e472","session_id":"runduel-evidence-invoice-gbp-candidate-a4f0ac9e-1386-4ea8-9a92-9742f6eddb8d"}
+
+event: RunCompleted
+data: {"created_at":1792955205,"event":"RunCompleted","agent_id":"extractor-regressed","agent_name":"Invoice extractor (regressed)","run_id":"e77b5a29-e1c4-4a8f-9b4c-bd436b40e472","session_id":"runduel-evidence-invoice-gbp-candidate-a4f0ac9e-1386-4ea8-9a92-9742f6eddb8d","content":"{\"invoice_id\": \"INV-306\", \"total\": 0.0}","content_type":"str","session_state":{},"metrics":{"duration":0.18311195899150334,"details":{"model":[{"id":"runduel-deterministic-v1","provider":"offline-fixture"}]}}}
+

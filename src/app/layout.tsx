@@ -16,9 +16,9 @@ const dmMono = DM_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Agent UI',
+  title: 'RunDuel — compare agent configurations',
   description:
-    'A modern chat interface for AI agents built with Next.js, Tailwind CSS, and TypeScript. This template provides a ready-to-use UI for interacting with Agno agents.'
+    'Compare baseline and candidate Agno runs on identical tasks with explicit checks and redacted evidence exports.'
 }
 
 export default function RootLayout({

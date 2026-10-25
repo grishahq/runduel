@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "redaction": "allowlist-v1: task text, criteria text/values, answers, tools, errors, endpoints and identifiers omitted",
+  "mode": "replay",
+  "promptSha256": "4338ca56e3d0870bd199fd84413f2667fd8d981516b434a873b7b9bcaab56ac0",
+  "latencyMeaning": "Browser replay wall time; not agent or model performance",
+  "runs": [
+    {
+      "role": "baseline",
+      "status": "completed",
+      "elapsedMs": 412,
+      "usage": {
+        "inputTokens": null,
+        "outputTokens": null
+      },
+      "cost": null,
+      "eventCount": 18,
+      "tools": [
+        {
+          "sequence": 1,
+          "status": "completed"
+        },
+        {
+          "sequence": 2,
+          "status": "completed"
+        }
+      ],
+      "checks": [
+        {
+          "criterion": 1,
+          "passed": true,
+          "reason": "Exact value matches"
+        },
+        {
+          "criterion": 2,
+          "passed": true,
+          "reason": "Exact value matches"
+        },
+        {
+          "criterion": 3,
+          "passed": true,
+          "reason": "Exact value matches"
+        }
+      ]
+    },
+    {
+      "role": "candidate",
+      "status": "completed",
+      "elapsedMs": 412,
+      "usage": {
+        "inputTokens": null,
+        "outputTokens": null
+      },
+      "cost": null,
+      "eventCount": 13,
+      "tools": [
+        {
+          "sequence": 1,
+          "status": "completed"
+        }
+      ],
+      "checks": [
+        {
+          "criterion": 1,
+          "passed": true,
+          "reason": "Exact value matches"
+        },
+        {
+          "criterion": 2,
+          "passed": true,
+          "reason": "Exact value matches"
+        },
+        {
+          "criterion": 3,
+          "passed": false,
+          "reason": "Required field is missing"
+        }
+      ]
+    }
+  ]
+}

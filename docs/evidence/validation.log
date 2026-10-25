@@ -1,0 +1,50 @@
+
+> runduel@0.1.0 validate /Users/g/Documents/Projects/OPEN_SOURCE/runduel
+> pnpm test && pnpm lint && pnpm typecheck && pnpm format
+
+
+> runduel@0.1.0 test /Users/g/Documents/Projects/OPEN_SOURCE/runduel
+> tsx --test tests/*.test.ts
+
+✔ SSE fragmentation, CRLF, multibyte UTF-8, comments, multiple frames and multiline JSON (61.802583ms)
+✔ SSE envelope used by upstream (1.1765ms)
+✔ SSE rejects invalid JSON (0.319292ms)
+✔ SSE rejects primitive (0.191209ms)
+✔ SSE rejects missing event (0.122208ms)
+✔ SSE rejects conflicting events (0.129333ms)
+✔ SSE rejects truncated frame (0.127167ms)
+✔ SSE rejects oversized frame (6.268625ms)
+✔ completion replaces streamed answer, usage missing stays unknown, tools merge by ID (309.098709ms)
+✔ valid usage is retained, invalid metrics stay unknown (8.133833ms)
+✔ run error, paused, malformed tools, missing terminal and HTTP failures are errors (33.173042ms)
+✔ terminal cancellation cannot become success on RunCompleted (0.971917ms)
+✔ user cancellation during a pending read releases stream (86.730292ms)
+✔ timeout is an error, not user cancellation (46.919375ms)
+✔ checks preserve types and zero; inherited paths are not values (5.189625ms)
+✔ allowlist exports omit adversarial secrets/free text and HTML executes no payload (0.480625ms)
+✔ live request uses independent sessions and identical task input; endpoint validation (19.795583ms)
+✔ recorded real AgentOS fixed suite detects every injected currency regression (122.622875ms)
+✔ terminal event finishes immediately even when connection stays open (0.458375ms)
+✔ custom task validates exact scalar checks and rejects ambiguous input (89.071917ms)
+ℹ tests 20
+ℹ suites 0
+ℹ pass 20
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 6835.334666
+
+> runduel@0.1.0 lint /Users/g/Documents/Projects/OPEN_SOURCE/runduel
+> eslint src tests scripts --max-warnings 0
+
+
+> runduel@0.1.0 typecheck /Users/g/Documents/Projects/OPEN_SOURCE/runduel
+> tsc --noEmit
+
+
+> runduel@0.1.0 format /Users/g/Documents/Projects/OPEN_SOURCE/runduel
+> prettier --check "src/**/*.{ts,tsx,css}" "tests/**/*.ts"
+
+Checking formatting...
+All matched files use Prettier code style!

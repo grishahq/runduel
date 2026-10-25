@@ -1,0 +1,54 @@
+event: RunStarted
+data: {"created_at":1792955204,"event":"RunStarted","agent_id":"extractor-baseline","agent_name":"Invoice extractor (baseline)","run_id":"0c9cf49d-42b2-465b-b7f0-760ab8440c4e","session_id":"runduel-evidence-invoice-usd-baseline-3f70e35f-a54f-4876-86db-a7b94ba87137","model":"runduel-deterministic-v1","model_provider":"offline-fixture"}
+
+event: ModelRequestStarted
+data: {"created_at":1792955204,"event":"ModelRequestStarted","agent_id":"extractor-baseline","agent_name":"Invoice extractor (baseline)","run_id":"0c9cf49d-42b2-465b-b7f0-760ab8440c4e","session_id":"runduel-evidence-invoice-usd-baseline-3f70e35f-a54f-4876-86db-a7b94ba87137","model":"runduel-deterministic-v1","model_provider":"offline-fixture"}
+
+event: ModelRequestCompleted
+data: {"created_at":1792955204,"event":"ModelRequestCompleted","agent_id":"extractor-baseline","agent_name":"Invoice extractor (baseline)","run_id":"0c9cf49d-42b2-465b-b7f0-760ab8440c4e","session_id":"runduel-evidence-invoice-usd-baseline-3f70e35f-a54f-4876-86db-a7b94ba87137","model":"runduel-deterministic-v1","model_provider":"offline-fixture","input_tokens":0,"output_tokens":0,"total_tokens":0,"reasoning_tokens":0,"cache_read_tokens":0,"cache_write_tokens":0}
+
+event: ToolCallStarted
+data: {"created_at":1792955204,"event":"ToolCallStarted","agent_id":"extractor-baseline","agent_name":"Invoice extractor (baseline)","run_id":"0c9cf49d-42b2-465b-b7f0-760ab8440c4e","session_id":"runduel-evidence-invoice-usd-baseline-3f70e35f-a54f-4876-86db-a7b94ba87137","tool":{"tool_call_id":"offline-1","tool_name":"extract_invoice","tool_args":{"document":"Extract invoice_id, total (number), and currency (ISO code) as a JSON object. Document: Invoice INV-104 | Total $120.00 | Currency USD"},"tool_call_error":null,"result":null,"metrics":null,"child_run_id":null,"stop_after_tool_call":false,"created_at":1792955204,"requires_confirmation":null,"confirmed":null,"confirmation_note":null,"requires_user_input":null,"user_input_schema":null,"user_feedback_schema":null,"answered":null,"external_execution_required":null,"external_execution_silent":null,"approval_type":null,"approval_id":null}}
+
+event: ToolCallCompleted
+data: {"created_at":1792955204,"event":"ToolCallCompleted","agent_id":"extractor-baseline","agent_name":"Invoice extractor (baseline)","run_id":"0c9cf49d-42b2-465b-b7f0-760ab8440c4e","session_id":"runduel-evidence-invoice-usd-baseline-3f70e35f-a54f-4876-86db-a7b94ba87137","content":"extract_invoice(document=...) completed in 0.0032s. ","tool":{"tool_call_id":"offline-1","tool_name":"extract_invoice","tool_args":{"document":"Extract invoice_id, total (number), and currency (ISO code) as a JSON object. Document: Invoice INV-104 | Total $120.00 | Currency USD"},"tool_call_error":false,"result":"{\"invoice_id\": \"INV-104\", \"total\": 120.0, \"currency_raw\": \"USD\"}","metrics":{"start_time":1792955204.6428168,"end_time":1792955204.646029,"duration":0.0032122080156113952},"child_run_id":null,"stop_after_tool_call":false,"created_at":1792955204,"requires_confirmation":null,"confirmed":null,"confirmation_note":null,"requires_user_input":null,"user_input_schema":null,"user_feedback_schema":null,"answered":null,"external_execution_required":null,"external_execution_silent":null,"approval_type":null,"approval_id":null}}
+
+event: ModelRequestStarted
+data: {"created_at":1792955204,"event":"ModelRequestStarted","agent_id":"extractor-baseline","agent_name":"Invoice extractor (baseline)","run_id":"0c9cf49d-42b2-465b-b7f0-760ab8440c4e","session_id":"runduel-evidence-invoice-usd-baseline-3f70e35f-a54f-4876-86db-a7b94ba87137","model":"runduel-deterministic-v1","model_provider":"offline-fixture"}
+
+event: ModelRequestCompleted
+data: {"created_at":1792955204,"event":"ModelRequestCompleted","agent_id":"extractor-baseline","agent_name":"Invoice extractor (baseline)","run_id":"0c9cf49d-42b2-465b-b7f0-760ab8440c4e","session_id":"runduel-evidence-invoice-usd-baseline-3f70e35f-a54f-4876-86db-a7b94ba87137","model":"runduel-deterministic-v1","model_provider":"offline-fixture","input_tokens":0,"output_tokens":0,"total_tokens":0,"reasoning_tokens":0,"cache_read_tokens":0,"cache_write_tokens":0}
+
+event: ToolCallStarted
+data: {"created_at":1792955204,"event":"ToolCallStarted","agent_id":"extractor-baseline","agent_name":"Invoice extractor (baseline)","run_id":"0c9cf49d-42b2-465b-b7f0-760ab8440c4e","session_id":"runduel-evidence-invoice-usd-baseline-3f70e35f-a54f-4876-86db-a7b94ba87137","tool":{"tool_call_id":"offline-2","tool_name":"normalize_currency","tool_args":{"extraction":"{\"invoice_id\": \"INV-104\", \"total\": 120.0, \"currency_raw\": \"USD\"}"},"tool_call_error":null,"result":null,"metrics":null,"child_run_id":null,"stop_after_tool_call":false,"created_at":1792955204,"requires_confirmation":null,"confirmed":null,"confirmation_note":null,"requires_user_input":null,"user_input_schema":null,"user_feedback_schema":null,"answered":null,"external_execution_required":null,"external_execution_silent":null,"approval_type":null,"approval_id":null}}
+
+event: ToolCallCompleted
+data: {"created_at":1792955204,"event":"ToolCallCompleted","agent_id":"extractor-baseline","agent_name":"Invoice extractor (baseline)","run_id":"0c9cf49d-42b2-465b-b7f0-760ab8440c4e","session_id":"runduel-evidence-invoice-usd-baseline-3f70e35f-a54f-4876-86db-a7b94ba87137","content":"normalize_currency(extraction=...) completed in 0.0004s. ","tool":{"tool_call_id":"offline-2","tool_name":"normalize_currency","tool_args":{"extraction":"{\"invoice_id\": \"INV-104\", \"total\": 120.0, \"currency_raw\": \"USD\"}"},"tool_call_error":false,"result":"{\"invoice_id\": \"INV-104\", \"total\": 120.0, \"currency\": \"USD\"}","metrics":{"start_time":1792955204.679371,"end_time":1792955204.679753,"duration":0.00038204097654670477},"child_run_id":null,"stop_after_tool_call":false,"created_at":1792955204,"requires_confirmation":null,"confirmed":null,"confirmation_note":null,"requires_user_input":null,"user_input_schema":null,"user_feedback_schema":null,"answered":null,"external_execution_required":null,"external_execution_silent":null,"approval_type":null,"approval_id":null}}
+
+event: ModelRequestStarted
+data: {"created_at":1792955204,"event":"ModelRequestStarted","agent_id":"extractor-baseline","agent_name":"Invoice extractor (baseline)","run_id":"0c9cf49d-42b2-465b-b7f0-760ab8440c4e","session_id":"runduel-evidence-invoice-usd-baseline-3f70e35f-a54f-4876-86db-a7b94ba87137","model":"runduel-deterministic-v1","model_provider":"offline-fixture"}
+
+event: RunContent
+data: {"created_at":1792955204,"event":"RunContent","agent_id":"extractor-baseline","agent_name":"Invoice extractor (baseline)","run_id":"0c9cf49d-42b2-465b-b7f0-760ab8440c4e","session_id":"runduel-evidence-invoice-usd-baseline-3f70e35f-a54f-4876-86db-a7b94ba87137","content":"{\"invoice_id","workflow_agent":false,"content_type":"str","reasoning_content":""}
+
+event: RunContent
+data: {"created_at":1792955204,"event":"RunContent","agent_id":"extractor-baseline","agent_name":"Invoice extractor (baseline)","run_id":"0c9cf49d-42b2-465b-b7f0-760ab8440c4e","session_id":"runduel-evidence-invoice-usd-baseline-3f70e35f-a54f-4876-86db-a7b94ba87137","content":"\": \"INV-104\"","workflow_agent":false,"content_type":"str","reasoning_content":""}
+
+event: RunContent
+data: {"created_at":1792955204,"event":"RunContent","agent_id":"extractor-baseline","agent_name":"Invoice extractor (baseline)","run_id":"0c9cf49d-42b2-465b-b7f0-760ab8440c4e","session_id":"runduel-evidence-invoice-usd-baseline-3f70e35f-a54f-4876-86db-a7b94ba87137","content":", \"total\": 1","workflow_agent":false,"content_type":"str","reasoning_content":""}
+
+event: RunContent
+data: {"created_at":1792955204,"event":"RunContent","agent_id":"extractor-baseline","agent_name":"Invoice extractor (baseline)","run_id":"0c9cf49d-42b2-465b-b7f0-760ab8440c4e","session_id":"runduel-evidence-invoice-usd-baseline-3f70e35f-a54f-4876-86db-a7b94ba87137","content":"20.0, \"curre","workflow_agent":false,"content_type":"str","reasoning_content":""}
+
+event: RunContent
+data: {"created_at":1792955204,"event":"RunContent","agent_id":"extractor-baseline","agent_name":"Invoice extractor (baseline)","run_id":"0c9cf49d-42b2-465b-b7f0-760ab8440c4e","session_id":"runduel-evidence-invoice-usd-baseline-3f70e35f-a54f-4876-86db-a7b94ba87137","content":"ncy\": \"USD\"}","workflow_agent":false,"content_type":"str","reasoning_content":""}
+
+event: ModelRequestCompleted
+data: {"created_at":1792955204,"event":"ModelRequestCompleted","agent_id":"extractor-baseline","agent_name":"Invoice extractor (baseline)","run_id":"0c9cf49d-42b2-465b-b7f0-760ab8440c4e","session_id":"runduel-evidence-invoice-usd-baseline-3f70e35f-a54f-4876-86db-a7b94ba87137","model":"runduel-deterministic-v1","model_provider":"offline-fixture","input_tokens":0,"output_tokens":0,"total_tokens":0,"time_to_first_token":0.031279333983547986,"reasoning_tokens":0,"cache_read_tokens":0,"cache_write_tokens":0}
+
+event: RunContentCompleted
+data: {"created_at":1792955204,"event":"RunContentCompleted","agent_id":"extractor-baseline","agent_name":"Invoice extractor (baseline)","run_id":"0c9cf49d-42b2-465b-b7f0-760ab8440c4e","session_id":"runduel-evidence-invoice-usd-baseline-3f70e35f-a54f-4876-86db-a7b94ba87137"}
+
+event: RunCompleted
+data: {"created_at":1792955204,"event":"RunCompleted","agent_id":"extractor-baseline","agent_name":"Invoice extractor (baseline)","run_id":"0c9cf49d-42b2-465b-b7f0-760ab8440c4e","session_id":"runduel-evidence-invoice-usd-baseline-3f70e35f-a54f-4876-86db-a7b94ba87137","content":"{\"invoice_id\": \"INV-104\", \"total\": 120.0, \"currency\": \"USD\"}","content_type":"str","session_state":{},"metrics":{"duration":0.2979387080122251,"details":{"model":[{"id":"runduel-deterministic-v1","provider":"offline-fixture"}]}}}
+

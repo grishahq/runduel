@@ -1,0 +1,274 @@
+{
+  "agnoVersion": "2.5.9",
+  "model": "runduel-deterministic-v1",
+  "externalModelCalls": 0,
+  "method": "Three declared synthetic tasks; baseline executes extraction and normalization; intentionally regressed candidate skips normalization. Exact typed field checks declared before capture. One paired run per task. Capture wall times include HTTP, tool execution and artificial 30ms per model chunk; not a speed comparison.",
+  "fixtureTransform": "Removed token counters from deterministic-model metrics: no provider usage exists. Other events preserved.",
+  "recordedAt": "2026-10-25T19:06:46.001Z",
+  "records": [
+    {
+      "taskId": "invoice-usd",
+      "role": "baseline",
+      "promptSha256": "4338ca56e3d0870bd199fd84413f2667fd8d981516b434a873b7b9bcaab56ac0",
+      "fixture": "public/fixtures/invoice-usd-baseline.sse",
+      "fixtureSha256": "7a2572e36a32697a2427471f004dbe15b17a2fc9abb598727964cdfc1102248c",
+      "status": "completed",
+      "answer": {
+        "invoice_id": "INV-104",
+        "total": 120,
+        "currency": "USD"
+      },
+      "checks": [
+        {
+          "path": "invoice_id",
+          "passed": true,
+          "expected": "INV-104",
+          "actual": "INV-104",
+          "reason": "Exact value matches"
+        },
+        {
+          "path": "total",
+          "passed": true,
+          "expected": 120,
+          "actual": 120,
+          "reason": "Exact value matches"
+        },
+        {
+          "path": "currency",
+          "passed": true,
+          "expected": "USD",
+          "actual": "USD",
+          "reason": "Exact value matches"
+        }
+      ],
+      "tools": [
+        {
+          "name": "extract_invoice",
+          "status": "completed"
+        },
+        {
+          "name": "normalize_currency",
+          "status": "completed"
+        }
+      ],
+      "captureWallMs": 832
+    },
+    {
+      "taskId": "invoice-usd",
+      "role": "candidate",
+      "promptSha256": "4338ca56e3d0870bd199fd84413f2667fd8d981516b434a873b7b9bcaab56ac0",
+      "fixture": "public/fixtures/invoice-usd-candidate.sse",
+      "fixtureSha256": "92dcdef054f552cb7387b7920d34114f0a2771a4293dfff795c1da27b3e1141c",
+      "status": "completed",
+      "answer": {
+        "invoice_id": "INV-104",
+        "total": 120
+      },
+      "checks": [
+        {
+          "path": "invoice_id",
+          "passed": true,
+          "expected": "INV-104",
+          "actual": "INV-104",
+          "reason": "Exact value matches"
+        },
+        {
+          "path": "total",
+          "passed": true,
+          "expected": 120,
+          "actual": 120,
+          "reason": "Exact value matches"
+        },
+        {
+          "path": "currency",
+          "passed": false,
+          "expected": "USD",
+          "reason": "Required field is missing"
+        }
+      ],
+      "tools": [
+        {
+          "name": "extract_invoice",
+          "status": "completed"
+        }
+      ],
+      "captureWallMs": 192
+    },
+    {
+      "taskId": "invoice-eur",
+      "role": "baseline",
+      "promptSha256": "104fc1a013ac4d6147adf80eb0788b2af2a85881c02e80bdc274e819030b3b5b",
+      "fixture": "public/fixtures/invoice-eur-baseline.sse",
+      "fixtureSha256": "f13880911d7b3f7cd1a6beb9d3f5339838c726ff8073ca835d96077adbb309ed",
+      "status": "completed",
+      "answer": {
+        "invoice_id": "INV-205",
+        "total": 89.5,
+        "currency": "EUR"
+      },
+      "checks": [
+        {
+          "path": "invoice_id",
+          "passed": true,
+          "expected": "INV-205",
+          "actual": "INV-205",
+          "reason": "Exact value matches"
+        },
+        {
+          "path": "total",
+          "passed": true,
+          "expected": 89.5,
+          "actual": 89.5,
+          "reason": "Exact value matches"
+        },
+        {
+          "path": "currency",
+          "passed": true,
+          "expected": "EUR",
+          "actual": "EUR",
+          "reason": "Exact value matches"
+        }
+      ],
+      "tools": [
+        {
+          "name": "extract_invoice",
+          "status": "completed"
+        },
+        {
+          "name": "normalize_currency",
+          "status": "completed"
+        }
+      ],
+      "captureWallMs": 299
+    },
+    {
+      "taskId": "invoice-eur",
+      "role": "candidate",
+      "promptSha256": "104fc1a013ac4d6147adf80eb0788b2af2a85881c02e80bdc274e819030b3b5b",
+      "fixture": "public/fixtures/invoice-eur-candidate.sse",
+      "fixtureSha256": "52b4537910e767c11b11c32030118b2a877646f28776d25dea3924d2a4ce3461",
+      "status": "completed",
+      "answer": {
+        "invoice_id": "INV-205",
+        "total": 89.5
+      },
+      "checks": [
+        {
+          "path": "invoice_id",
+          "passed": true,
+          "expected": "INV-205",
+          "actual": "INV-205",
+          "reason": "Exact value matches"
+        },
+        {
+          "path": "total",
+          "passed": true,
+          "expected": 89.5,
+          "actual": 89.5,
+          "reason": "Exact value matches"
+        },
+        {
+          "path": "currency",
+          "passed": false,
+          "expected": "EUR",
+          "reason": "Required field is missing"
+        }
+      ],
+      "tools": [
+        {
+          "name": "extract_invoice",
+          "status": "completed"
+        }
+      ],
+      "captureWallMs": 194
+    },
+    {
+      "taskId": "invoice-gbp",
+      "role": "baseline",
+      "promptSha256": "3310858566e884f5eb63fa99227ccacd0d9d0de518a09151adc29686e5a4985b",
+      "fixture": "public/fixtures/invoice-gbp-baseline.sse",
+      "fixtureSha256": "cc10e571e024729adf2dfb3aedd20c68a3dc86c6dec22b7e32738496a0a91263",
+      "status": "completed",
+      "answer": {
+        "invoice_id": "INV-306",
+        "total": 0,
+        "currency": "GBP"
+      },
+      "checks": [
+        {
+          "path": "invoice_id",
+          "passed": true,
+          "expected": "INV-306",
+          "actual": "INV-306",
+          "reason": "Exact value matches"
+        },
+        {
+          "path": "total",
+          "passed": true,
+          "expected": 0,
+          "actual": 0,
+          "reason": "Exact value matches"
+        },
+        {
+          "path": "currency",
+          "passed": true,
+          "expected": "GBP",
+          "actual": "GBP",
+          "reason": "Exact value matches"
+        }
+      ],
+      "tools": [
+        {
+          "name": "extract_invoice",
+          "status": "completed"
+        },
+        {
+          "name": "normalize_currency",
+          "status": "completed"
+        }
+      ],
+      "captureWallMs": 258
+    },
+    {
+      "taskId": "invoice-gbp",
+      "role": "candidate",
+      "promptSha256": "3310858566e884f5eb63fa99227ccacd0d9d0de518a09151adc29686e5a4985b",
+      "fixture": "public/fixtures/invoice-gbp-candidate.sse",
+      "fixtureSha256": "8cbb0e4e72cccf336d5e1cd74aa95d96b1df5f77c68b2a1965a3e10343b9bd95",
+      "status": "completed",
+      "answer": {
+        "invoice_id": "INV-306",
+        "total": 0
+      },
+      "checks": [
+        {
+          "path": "invoice_id",
+          "passed": true,
+          "expected": "INV-306",
+          "actual": "INV-306",
+          "reason": "Exact value matches"
+        },
+        {
+          "path": "total",
+          "passed": true,
+          "expected": 0,
+          "actual": 0,
+          "reason": "Exact value matches"
+        },
+        {
+          "path": "currency",
+          "passed": false,
+          "expected": "GBP",
+          "reason": "Required field is missing"
+        }
+      ],
+      "tools": [
+        {
+          "name": "extract_invoice",
+          "status": "completed"
+        }
+      ],
+      "captureWallMs": 196
+    }
+  ]
+}

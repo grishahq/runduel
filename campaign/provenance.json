@@ -1,0 +1,27 @@
+{
+  "tool": "built-in image_gen.imagegen",
+  "inspection": "Both generated assets inspected in tool output: English copy legible; conceptual illustrations; no fabricated UI/metrics.",
+  "visualDirection": "Midnight navy, warm paper, mint baseline and coral candidate; tactile glass editorial metaphors. Real product captures and data plots use the same restrained palette and must remain distinct from conceptual art.",
+  "assets": [
+    {
+      "file": "campaign/assets/01-missing-field.png",
+      "source": "/Users/g/.codex/generated_images/01a1746d-ad1b-79f0-8c83-e083691e51d8/exec-2a975790-ad4a-4365-be91-a9cc98ffd8bc.png",
+      "prompt": "Use case: ads-marketing\nAsset type: RunDuel English launch campaign conceptual artwork, landscape 1536x1024.\nPrimary request: An editorial illustration about two agent configurations reading the identical synthetic invoice. A crisp off-white invoice sheet splits into two luminous pathways on a deep midnight-blue workbench. One pathway produces a neat transparent form with one conspicuously empty field; the other produces a complete form. Stylized glass and paper, thoughtful engineering publication aesthetic, restrained mint and coral accents, tactile lighting, clean generous negative space.\nText (verbatim): \"A convincing answer can still miss a field.\" and small \"RunDuel\". English only.\nConstraints: Conceptual illustration, not a screenshot or dashboard; no charts, numbers, metrics, logos, testimonials, or adoption claims. No other text."
+    },
+    {
+      "file": "campaign/assets/02-check-the-outcome.png",
+      "source": "/Users/g/.codex/generated_images/01a1746d-ad1b-79f0-8c83-e083691e51d8/exec-3f948ab0-0aec-490e-8358-36f0100dc5a7.png",
+      "prompt": "Use case: ads-marketing\nAsset type: second original RunDuel launch campaign illustration, landscape 1536x1024.\nPrimary request: Editorial conceptual illustration of an engineer's evidence workbench: two parallel glass channels carrying identical paper documents through different mechanical tools. A mint illuminated inspection lens highlights a missing square in a coral output form. Thoughtful physical metaphor for explicit criteria versus persuasive answers. Deep midnight-blue, warm paper, restrained mint and coral palette; tactile glass, soft cinematic lighting, elegant engineering magazine aesthetic. Distinct from a computer screen.\nText (verbatim): \"Compare the behavior. Check the outcome.\" and small \"RunDuel\".\nConstraints: English only. Concept art, no UI screenshot, no metric chart, no numbers, no claims of adoption or measured productivity. No other text."
+    },
+    {
+      "file": "campaign/assets/03-real-comparison.png",
+      "source": "tests/browser/compare.spec.ts",
+      "type": "real Chromium screenshot of recorded Agno fixture comparison"
+    },
+    {
+      "file": "campaign/assets/04-fixed-suite-results.png",
+      "source": "scripts/plot-evidence.py and docs/evidence/fixed-suite.json",
+      "type": "data plot of checked real deterministic Agno runs"
+    }
+  ]
+}

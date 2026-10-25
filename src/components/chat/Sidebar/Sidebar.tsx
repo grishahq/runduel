@@ -1,4 +1,5 @@
 'use client'
+import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { ModeSelector } from '@/components/chat/Sidebar/ModeSelector'
 import { EntitySelector } from '@/components/chat/Sidebar/EntitySelector'
@@ -21,6 +22,9 @@ const SidebarHeader = () => (
   <div className="flex items-center gap-2">
     <Icon type="agno" size="xs" />
     <span className="text-xs font-medium uppercase text-white">Agent UI</span>
+    <Link href="/compare" className="ml-2 text-xs text-primary underline">
+      Compare ↗
+    </Link>
   </div>
 )
 

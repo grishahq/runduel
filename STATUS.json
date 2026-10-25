@@ -1,0 +1,49 @@
+{
+  "project": "RunDuel",
+  "maturity": "experimental",
+  "language": "en",
+  "upstream_sha": "6dad9593fca6756e1813e4f4b3b2620be6377691",
+  "plan": {
+    "state": "complete",
+    "path": "PLAN.md"
+  },
+  "implementation": {
+    "state": "complete",
+    "features": [
+      "paired Agno runs",
+      "custom exact checks",
+      "offline replay",
+      "redacted exports",
+      "retained upstream chat"
+    ]
+  },
+  "validation": {
+    "state": "passed",
+    "unit_tests": 20,
+    "browser_tests": 7,
+    "build": "passed",
+    "independent_review": "one reproduced terminal-read defect fixed and rechecked"
+  },
+  "github_release": {
+    "state": "pending",
+    "url": null
+  },
+  "campaign": {
+    "state": "pending",
+    "prepared": false,
+    "scheduled": false,
+    "published": false
+  },
+  "evidence_paths": [
+    "docs/evidence/validation.log",
+    "docs/evidence/build.log",
+    "docs/evidence/browser-results.json",
+    "docs/evidence/fixed-suite.json",
+    "docs/evidence/independent-review.md"
+  ],
+  "blockers": [],
+  "next_actions": [
+    "Clean source install, publish and verify v0.1.0",
+    "Complete five-beat campaign and inspect native scheduling under portfolio lock"
+  ]
+}

@@ -1,0 +1,81 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'"><title>RunDuel redacted comparison</title><style>body{background:#101b2d;color:#edf4f8;font:16px system-ui;max-width:900px;margin:40px auto;padding:24px}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#19283b;padding:24px;border-radius:16px}h1{color:#a9eed4}</style><h1>RunDuel comparison</h1><p>Experimental v0.1 · Redacted evidence export. Criterion numbers refer to the original local comparison. Unknown cost is null.</p><pre>{
+  "schemaVersion": 1,
+  "redaction": "allowlist-v1: task text, criteria text/values, answers, tools, errors, endpoints and identifiers omitted",
+  "mode": "replay",
+  "promptSha256": "4338ca56e3d0870bd199fd84413f2667fd8d981516b434a873b7b9bcaab56ac0",
+  "latencyMeaning": "Browser replay wall time; not agent or model performance",
+  "runs": [
+    {
+      "role": "baseline",
+      "status": "completed",
+      "elapsedMs": 412,
+      "usage": {
+        "inputTokens": null,
+        "outputTokens": null
+      },
+      "cost": null,
+      "eventCount": 18,
+      "tools": [
+        {
+          "sequence": 1,
+          "status": "completed"
+        },
+        {
+          "sequence": 2,
+          "status": "completed"
+        }
+      ],
+      "checks": [
+        {
+          "criterion": 1,
+          "passed": true,
+          "reason": "Exact value matches"
+        },
+        {
+          "criterion": 2,
+          "passed": true,
+          "reason": "Exact value matches"
+        },
+        {
+          "criterion": 3,
+          "passed": true,
+          "reason": "Exact value matches"
+        }
+      ]
+    },
+    {
+      "role": "candidate",
+      "status": "completed",
+      "elapsedMs": 412,
+      "usage": {
+        "inputTokens": null,
+        "outputTokens": null
+      },
+      "cost": null,
+      "eventCount": 13,
+      "tools": [
+        {
+          "sequence": 1,
+          "status": "completed"
+        }
+      ],
+      "checks": [
+        {
+          "criterion": 1,
+          "passed": true,
+          "reason": "Exact value matches"
+        },
+        {
+          "criterion": 2,
+          "passed": true,
+          "reason": "Exact value matches"
+        },
+        {
+          "criterion": 3,
+          "passed": false,
+          "reason": "Required field is missing"
+        }
+      ]
+    }
+  ]
+}</pre></html>
