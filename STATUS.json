@@ -35,7 +35,7 @@
     "signed_attestation": "verified"
   },
   "campaign": {
-    "state": "prepared",
+    "state": "prepared_scheduling_blocked",
     "prepared": true,
     "linkedin_posts": 5,
     "x_threads": 5,
@@ -45,7 +45,8 @@
     "all_character_limits_checked": true,
     "scheduled": false,
     "published": false,
-    "evidence": "campaign/CAMPAIGN.md"
+    "evidence": "campaign/CAMPAIGN.md",
+    "schedule_evidence": "campaign/schedule.json"
   },
   "evidence_paths": [
     "docs/evidence/validation.log",
@@ -58,9 +59,10 @@
     "campaign/provenance.json"
   ],
   "blockers": [
-    "Native composer/queue work currently awaits the live portfolio social-publish.lock held by another project. No RunDuel slot has been reserved and no post has been scheduled or published."
+    "Native social scheduling could not be completed: Chrome Person-profile browser control detached (Debugger unattached) after an X navigation timeout; both the RunDuel-owned X and LinkedIn tab reads failed. No connected social publishing plugin is installed (Metricool was discovered but remains unconnected). Reconnect browser control or connect an authorized scheduler, then inspect native queues under the portfolio lock before scheduling."
   ],
   "next_actions": [
-    "Acquire the portfolio lock, inspect native queues and schedule supported campaign items"
+    "Restore native browser control or connect an authorized social scheduler.",
+    "Under the exclusive portfolio lock, verify both exact accounts, inspect queues, reserve free slots at no more than 3 items/platform/week across the portfolio, schedule the prepared series and record native IDs/readback."
   ]
 }

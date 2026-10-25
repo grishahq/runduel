@@ -20,9 +20,28 @@
     "metricool": "Discovered but not installed; no connected social publishing tool available in this chat"
   },
   "native_scheduling": {
-    "state": "awaiting_portfolio_lock",
+    "state": "blocked_access",
     "reservation_count": 0,
-    "readback_ids": []
+    "scheduled_count": 0,
+    "published_count": 0,
+    "readback_ids": [],
+    "blocker": "Native social scheduling could not be completed: Chrome Person-profile browser control detached (Debugger unattached) after an X navigation timeout; both the RunDuel-owned X and LinkedIn tab reads failed. No connected social publishing plugin is installed (Metricool was discovered but remains unconnected). Reconnect browser control or connect an authorized scheduler, then inspect native queues under the portfolio lock before scheduling.",
+    "observed_at_utc": "2026-10-25T19:39:06.733665+00:00",
+    "attempts": [
+      {
+        "action": "Open a new RunDuel-owned X profile tab",
+        "result": "Navigation to https://x.com/grishahq timed out; created tab 464263843"
+      },
+      {
+        "action": "Bind the newly created X tab after navigation",
+        "result": "Debugger unattached"
+      },
+      {
+        "action": "Read the existing RunDuel-owned LinkedIn tab",
+        "result": "Debugger unattached"
+      }
+    ],
+    "lock_observation": "Exclusive mkdir attempts found a live lock owned by other portfolio projects. No lock was stolen, no native composer was touched and no slots were reserved."
   },
   "items": [
     {

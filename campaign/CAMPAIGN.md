@@ -192,4 +192,3 @@ If you build on Agno, try one real task and report a reproducible issue with red
 
 4/4 Release: https://github.com/grishahq/runduel/releases/tag/v0.1.0
 Try one task, inspect its checks and report a reproducible issue with redacted metadata. No model-quality, adoption or human-productivity claim is implied.
-
